@@ -28,20 +28,20 @@ a {
     text-decoration: none;
 }
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 16px 0;
 }
 
-#header .logo {
+.header .logo {
     font-size: 24px;
     font-weight: 600;
     color: var(--light-1);
 }
 
-#header a {
+.header a {
     color: var(--light-2);
     font-size: 18px;
 }
