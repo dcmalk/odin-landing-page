@@ -1,8 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --blue: #3883F6;
+    --dark-1: #1F2937;
+    --light-1: #F9FAF8;
+    --light-2: #E5E7EB;
+}
+
 body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
-    margin: 0;
+    margin: 0 92px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-1);
   }
   
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 16px 0;
+}
+
+#header .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--light-1);
+}
+
+#header a {
+    color: var(--light-2);
+    font-size: 18px;
+}
+
+.left, .right {
+    display: flex;
+}
+
+
