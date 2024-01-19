@@ -1,5 +1,8 @@
+/* Global styles and imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+/* Color variables */
 :root {
     --blue: #3883F6;
     --dark-1: #1F2937;
@@ -7,6 +10,7 @@
     --light-2: #E5E7EB;
 }
 
+/* Base element styles */
 body {
     font-family: Roboto, sans-serif;
     min-height: 100vh;
@@ -18,16 +22,32 @@ body {
   
 ul {
     list-style-type: none;
-    display: flex;
     margin: 0;
     padding: 0;
-    gap: 32px;
 }
 
 a {
     text-decoration: none;
+    color: var(--light-2);
+    font-size: 18px;
 }
 
+button {
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
+    width: auto;
+    color: var(--light-1);
+    background: var(--blue);
+  }
+  
+/* General layout */
+.left, .right, .container {
+    display: flex;
+}
+
+/* Header section */
 .header {
     display: flex;
     justify-content: space-between;
@@ -41,13 +61,38 @@ a {
     color: var(--light-1);
 }
 
-.header a {
+.links {
+    display: flex;
+    gap: 32px;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+
+.hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%;
+    margin-right: 32px;
+    gap: 8px;
+}
+
+.hero img {
+    flex-basis: 50%;
+}
+
+.hero .title {
+    color: var(--light-1);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero .text {
     color: var(--light-2);
     font-size: 18px;
 }
-
-.left, .right {
-    display: flex;
-}
-
 
