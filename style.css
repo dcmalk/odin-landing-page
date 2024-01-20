@@ -194,3 +194,13 @@ button {
     border: 2px solid var(--light-1) ;
     flex-shrink: 0;
 }
+
+/* Footer section */
+.footer {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-1);
+    color: var(--light-1);
+}
