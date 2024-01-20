@@ -1,5 +1,5 @@
 /* Global styles and imports */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 
 /* Color variables */
@@ -44,8 +44,7 @@ button {
   
 /* General layout */
 .section {
-    padding-left: 92px;
-    padding-right: 92px;
+    padding: 0 92px;
 }
 
 .text {
@@ -129,4 +128,32 @@ button {
     border: 3px solid var(--blue);
     border-radius: 8px;
     margin-bottom: 8px;
+}
+
+/* Testimonial section */
+.testimonial {
+    display: flex;
+    justify-content: center;
+    background: var(--light-2);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.testimonial .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: var(--dark-1);
+    padding-bottom: 12px;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: 700;
 }
