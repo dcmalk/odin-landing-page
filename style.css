@@ -60,13 +60,21 @@ button {
 }
 
 .header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 24px;
     font-weight: 400;
     color: var(--light-1);
 }
 
+.header .logo img {
+    max-width: 42px;
+}
+
 .links {
     display: flex;
+    align-self: center;
     gap: 32px;
 }
 
@@ -76,14 +84,15 @@ button {
     align-items: flex-start;
     padding-top: 48px;
     padding-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .hero .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 32px;
-    gap: 8px;
+    margin-right: 48px;
+    gap: 12px;
 }
 
 .hero .title {
@@ -94,6 +103,12 @@ button {
 
 .hero .text {
     color: var(--light-2);
+    margin-bottom: 12px;
+}
+
+.hero > img {
+    flex: 1;
+    max-width: 50%;
 }
 
 /* Info section */
@@ -116,7 +131,8 @@ button {
 .info .container {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .item {
@@ -126,7 +142,7 @@ button {
 
 .item img {
     border: 3px solid var(--blue);
-    border-radius: 8px;
+    border-radius: 16px;
     margin-bottom: 8px;
 }
 
@@ -146,16 +162,17 @@ button {
 }
 
 .quote {
-    font-size: 36px;
+    font-size: 28px;
     font-style: italic;
     font-weight: 100;
+    line-height: 1.3em;
     color: var(--dark-1);
     padding-bottom: 12px;
 }
 
 .author {
     align-self: flex-end;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /* Call-to-action section */
@@ -163,8 +180,8 @@ button {
     display: flex;
     justify-content: center;
     background: var(--light-1);
-    padding-top: 72px;
-    padding-bottom: 72px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     color: var(--light-1);
 }
 
@@ -176,7 +193,6 @@ button {
     border-radius: 8px;
     padding: 48px;
     width: 100%;
-    max-width: 800px;
 }
 
 .cta .container {
@@ -188,6 +204,7 @@ button {
 .cta .title {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .cta button {
@@ -203,4 +220,5 @@ button {
     align-items: center;
     background: var(--dark-1);
     color: var(--light-1);
+    text-align: center;
 }
